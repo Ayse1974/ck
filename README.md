@@ -1,18 +1,29 @@
-Timetracker REST API Sample Code
-===================
-
-This repo contains code samples for using the REST API's in Timetracker. The code is optimized to be simple and easy to understand.
-
-The OData Connected Service Extension (https://docs.microsoft.com/en-us/odata/client/code-generation-tool) has been used to build this code sample.
-
-Reporting API Overview documentation: https://support.7pace.com/hc/en-us/articles/360035502332-Reporting-API-Overview
-
-## TimetrackerReportingClient usage
-
-This is a sample of the console application which connects to DevOps (former VSTS) or DevOps Server (On-premise, former TFS) version of Timetracker and returns all work items with time records for last 3 months.
-Command line parameters:
-
-DevOps usage (token auth): 
-```
-TimetrackerReportingClient.exe ServiceURI -t Token -c System.RemoteLinkCount,System.CommentCount,System.IterationLevel1 -x json
-
+{
+    "id": "/subscriptions/bc17cdeb-e07e-4b76-9b36-837ce5425ba7/resourceGroups/zteckjob-rg/providers/microsoft.insights/components/ck",
+    "name": "ck",
+    "type": "microsoft.insights/components",
+    "location": "eastus",
+    "tags": {},
+    "kind": "web",
+    "etag": "\"0c00e921-0000-0100-0000-621746180000\"",
+    "properties": {
+        "Ver": "v2",
+        "ApplicationId": "ck",
+        "AppId": "b3ece3f4-856a-4fb5-83a3-db5365527d3e",
+        "Application_Type": "web",
+        "Flow_Type": "Redfield",
+        "Request_Source": "IbizaAIExtensionEnablementBlade",
+        "InstrumentationKey": "bd94872c-3ada-4819-a5bd-a5268ec7e5df",
+        "ConnectionString": "InstrumentationKey=bd94872c-3ada-4819-a5bd-a5268ec7e5df;IngestionEndpoint=https://eastus-8.in.applicationinsights.azure.com/",
+        "Name": "ck",
+        "CreationDate": "2022-02-22T19:57:24.7642764+00:00",
+        "TenantId": "bc17cdeb-e07e-4b76-9b36-837ce5425ba7",
+        "provisioningState": "Succeeded",
+        "SamplingPercentage": null,
+        "RetentionInDays": 90,
+        "WorkspaceResourceId": "/subscriptions/bc17cdeb-e07e-4b76-9b36-837ce5425ba7/resourcegroups/DefaultResourceGroup-EUS/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-bc17cdeb-e07e-4b76-9b36-837ce5425ba7-EUS",
+        "IngestionMode": "LogAnalytics",
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled"
+    }
+}
