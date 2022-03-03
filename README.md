@@ -15,18 +15,4 @@ Command line parameters:
 DevOps usage (token auth): 
 ```
 TimetrackerReportingClient.exe ServiceURI -t Token -c System.RemoteLinkCount,System.CommentCount,System.IterationLevel1 -x json
-```
 
-On-premise usage (NTLM auth):
-```
-TimetrackerReportingClient.exe ServiceURI -w -c System.RemoteLinkCount,System.CommentCount,System.IterationLevel1 -x json
-```
-## Parameters
-
-|   | DevOps Server  | DevOps  |
-|---|---|---|
-| ServiceUri  | [timetrackerServiceUrl:Port]/api/[CollectionName]/odata/v3.0  |  https://[accountName].timehub.7pace.com/api/odata/v3.0 |
-| -t  | -  | API Token  |
-| -w  | no value, tells application to use Windows Credentials  | -  |
-|-x|(Optional) Export format. Possible values: xml, json. Provide empty string if no export required|(Optional) Export format. Possible values: xml, json. Provide empty string if no export required|
-|-c| (Optional) Comma separated list of work item's custom fields, e.g. System.RemoteLinkCount,System.CommentCount,System.IterationLevel1|(Optional) Comma separated list of work item's custom fields, e.g. System.RemoteLinkCount,System.CommentCount,System.IterationLevel1|
